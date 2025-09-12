@@ -111,49 +111,64 @@ nav ul li a:focus {
 
 /* Conteúdo principal */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3 partes para as sections, 1 para aside */
     gap: 20px;
-    width: 1000px;
-
-
- /* Seção principal */
- section {
-     flex: 4;
-     background-color: #f2f2f2;
-     padding: 20px;
-     border-radius: 8px;
-     box-shadow: 0 0 5px rgba(0,0,0,0.1);
- }
- 
- /* Barra lateral */
-    aside {
-        flex-grow: 3;
-        background-color: #e6f0ff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        margin-left: 1000px;
-    }
-    aside h3 {
-        margin-bottom: 10px;
-    }
-    aside ul {
-        list-style-type: none;
-    }
-    aside ul li {
-        margin-bottom: 5px;
-    }
-    aside ul li a {
-        text-decoration: none;
-        color: #004080;
-    }
-    aside ul li a:hover,
-    aside ul li a:focus {
-        text-decoration: underline;
-    }
+    padding: 20px;
+    min-height: 60vh; /* garante espaço vertical para distribuir as 2 linhas */
+    align-items: start;
+    grid-auto-rows: 1fr; /* faz com que as linhas do grid ocupem frações iguais */
 }
+
+.grid-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; /* duas linhas iguais */
+    gap: 20px;
+    height: 100%; /* para que as células 1fr da grid usem toda a altura disponível */
+}
+
+/* Cada section dentro da grade */
+.grid-sections section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+    /* Permite que a seção role se o conteúdo for maior que o espaço */
+    overflow: auto;
+
+    /* importante para layouts de grid/flex quando se usa overflow */
+    min-height: 0;
+}
+
+/* Barra lateral */
+aside {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    /* garante que o aside se estique verticalmente junto com a coluna do grid */
+    align-self: stretch;
+}
+aside h3 {
+    margin-bottom: 10px;
+}
+aside ul {
+    list-style-type: none;
+}
+aside ul li {
+    margin-bottom: 5px;
+}
+aside ul li a {
+    text-decoration: none;
+    color: #004080;
+}
+aside ul li a:hover,
+aside ul li a:focus {
+    text-decoration: underline;
+}
+
 /* Rodapé */
 footer {
     background-color: #333;
