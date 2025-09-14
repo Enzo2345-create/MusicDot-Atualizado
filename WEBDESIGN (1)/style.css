@@ -111,11 +111,42 @@ nav ul li a:focus {
 
 /* Conteúdo principal */
 
+/*Limonations*/
 .fuinha {
     width: 300px; 
     height: auto
 }
 
+h2 {
+    text-align: center;
+}
+
+section {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: auto; /* evita bug com float */
+}
+
+figure {
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/*fecha limonations*/
 main {
     display: grid;
     grid-template-columns: 3fr 1fr; /* 3 partes para as sections, 1 para aside */
