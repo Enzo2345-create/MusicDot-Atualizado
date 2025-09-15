@@ -119,6 +119,7 @@ footer {
     display: flex;
     justify-content: center; /* Texto à esquerda, ícones à direita */
     align-items: center;
+    display: block
   }
   
   .footer-icon {
@@ -127,6 +128,7 @@ footer {
     margin-left: 5px; /* espaço entre os ícones */
     cursor: pointer;
     transition: transform 0.2s;
+    border-radius: 20%;
   }
 
 .fuinha {
