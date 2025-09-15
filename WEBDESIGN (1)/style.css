@@ -112,6 +112,23 @@ nav ul li a:focus {
 /* Conteúdo principal */
 
 /*Limonations*/
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Texto à esquerda, ícones à direita */
+    align-items: center;
+  }
+  
+  .footer-icon {
+    width: 30px;   /* tamanho pequeno */
+    height: px;
+    margin-left: 5px; /* espaço entre os ícones */
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
 .fuinha {
     width: 300px; 
     height: auto
@@ -140,7 +157,6 @@ figure img {
     display: block;
     max-width: 150px;
     border-radius: 5px;
-    margin-bottom: 30px;
 }
 
 figcaption {
