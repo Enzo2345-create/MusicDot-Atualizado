@@ -124,7 +124,7 @@ footer {
   
   .footer-icon {
     width: 30px;   /* tamanho pequeno */
-    height: px;
+    height: auto;
     margin-left: 5px; /* espaço entre os ícones */
     cursor: pointer;
     transition: transform 0.2s;
@@ -133,7 +133,7 @@ footer {
 
 .fuinha {
     width: 300px; 
-    height: auto
+    height: 100px;
 }
 
 h2 {
