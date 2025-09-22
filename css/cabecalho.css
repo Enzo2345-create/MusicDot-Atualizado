@@ -8,21 +8,21 @@
     color: #fff;
     background-color: 2D5377;
 } 
-    .cabecalho_logo { 
+    .cabecalho__logo { 
         padding: 1.5em 0;
         width: 14.5em;
        }
-    .cabecalho_menu { 
+    .cabecalho__menu { 
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         
         background-color: #272B3A87;
     }
-    .cabecalho_item-menu {
+    .cabecalho__item-menu {
         display: inline-block;
     }
-    .cabecalho_item-menu a {
+    .cabecalho__item-menu a {
         display: inline-block;
         padding: 1.86em 1.42em;
     }
