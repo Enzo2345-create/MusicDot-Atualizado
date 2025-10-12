@@ -176,7 +176,7 @@ main {
     align-items: start;
     grid-auto-rows: 1fr; /* faz com que as linhas do grid ocupem frações iguais */
 }
-
+                                           
 .grid-sections {
     display: grid;
     grid-template-columns: 1fr 1fr;
