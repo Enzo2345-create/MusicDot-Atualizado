@@ -83,9 +83,9 @@
         align-items: center;
         background-repeat: no-repeat;
         background-size: 2rem 2rem;
-        background-position: top ,6rem center;
+        background-position: top .6rem center;
         padding-top: 2.5rem;
-        transition: 25s;
+        transition: .25s;
     }
     .cursos__lista li:hover {
         transform: translate(0, .22rem);
@@ -222,7 +222,7 @@
             background-position: top 3.6rem center;
         }
 
-        .cursos__lista .cursos--destaque2 {
+        .cursos__lista .curso--destaque2 {
             order: -1;
             grid-area: 1/4/span 2/5;
             padding-top: 6rem;
@@ -231,10 +231,10 @@
         }
 
         .cursos__lista p {
-            font-size: 9rem;
+            font-size: .9rem;
         }
 
-        .curso--destaque2 .imagem--destaque2 {
+        .curso--destaque2 .imagem-destaque2 {
             width: 6rem;
             height: 6rem;
             margin-bottom: .8rem;
