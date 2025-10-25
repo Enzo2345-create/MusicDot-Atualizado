@@ -32,7 +32,7 @@
     justify-content: space-evenly;
 }
 
-.aplicativo__buttom {
+.aplicativo__button {
     color: #e93d50;
     font-weight: 600;
     letter-spacing: 1.6px;
@@ -112,7 +112,7 @@
         font-size: 1.8rem;
     }
 
-    .aplicativo__buttom {
+    .aplicativo__button {
         width: 9.5rem;
         font-size: .8rem;
         background-size: 1.8rem;
